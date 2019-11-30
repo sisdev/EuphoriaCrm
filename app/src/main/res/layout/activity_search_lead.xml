@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search_lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="22dp"
+        android:src="@drawable/icon_search"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:visibility="visible"
+        android:visibility="invisible"
+        android:id="@+id/progressBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No result found ! Press search button for new search"
+        android:id="@+id/tv_no_search_hint"
+        android:textColor="#d7426c"
+        android:textSize="20sp"
+        android:padding="50dp"
+        android:textStyle="italic"
+        tools:visibility="visible"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UpdateMyTaskActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myLinearLayout"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout_name"
+            android:theme="@style/EditScreenTextInputLayoutStyle"
+            >
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:textSize="15sp"
+                android:alpha="0.8"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_narration"
+            android:theme="@style/EditScreenTextInputLayoutStyle"
+            >
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/ed_narration"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:hint="Narration" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Task Type     "/>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spn_task_type"
+                android:textAlignment="textStart"
+                android:textDirection="firstStrong"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:ignore="RtlCompat">
+
+            </Spinner>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Status         "/>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spn_status"
+                android:textAlignment="textStart"
+                android:textDirection="firstStrong"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:ignore="RtlCompat">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text=" "
+            android:visibility="gone"
+            android:hint="Output!"
+            android:id="@+id/ed_output"
+            android:background="@drawable/container_white2"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tv_date"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/container_white"
+                android:gravity="center"
+                android:drawableLeft="@drawable/date_picker"
+                android:text="Query Date"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tv_time"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/time_picker"
+                android:padding="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/container_white"
+                android:gravity="center"
+                android:text="Query Date"/>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Update Task"
+            android:layout_gravity="center"
+            android:background="@drawable/button2"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btn_update_task"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

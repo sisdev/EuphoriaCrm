@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Euphoria CRM</string>
+    <string name="website">Website</string>
+    <string name="training">Training</string>
+    <string name="local_name_indirapuram">Indirapuram</string>
+    <string name="local_name_ghaziabad">Ghaziabad</string>
+    <string name="title_my_leads">My Leads</string>
+    <string name="ADD_LEAD">ADD LEAD</string>
+    <string name="adding">Adding ...</string>
+    <string name="blank_text" />
+    <string name="Logout">Logout</string>
+    <string name="confirm_logout">are you sure logout!</string>
+    <string name="cancel">cancel</string>
+    <string name="please_wait_login">login please wait...</string>
+    <string name="position">position</string>
+    <string name="send_reports">Send Report</string>
+    <string name="sending">SENDING...</string>
+    <string name="SEND_REPORT">SEND REPORT</string>
+    <string name="updating">Updating...</string>
+    <string name="TASK_UPDATE">UPDATE TASK</string>
+    <string name="title_lead_detail">Lead Detail</string>
+
+
+    <string-array name="array_spn_query_source">
+        <item>Website</item>
+        <item>Phone</item>
+        <item>WalkIn</item>
+        <item>Just Dial</item>
+        <item>Sulekha</item>
+        <item>June</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="array_spn_district">
+        <item>Ghaziabad</item>
+        <item>Noida</item>
+        <item>Varansi</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="array_spn_query_type">
+        <item>Training</item>
+        <item>Recruitment</item>
+        <item>Job/Career</item>
+        <item>Career Counselling</item>
+        <item>Institute Training</item>
+        <item>Development</item>
+        <item>Sales And Services</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="array_spn_city">
+        <item>Indirapuram</item>
+        <item>Kaushambi</item>
+        <item>Sahibabad</item>
+        <item>Mohan Nagar</item>
+        <item>Nodia</item>
+        <item>Vasundhara</item>
+        <item>Vaishali</item>
+        <item>Maharajpur</item>
+        <item>Padpadganj</item>
+        <item>Khoda</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="array_spn_task_type">
+        <item>Call</item>
+        <item>Meeting</item>
+        <item>Demo</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="array_spn_status">
+        <item>New</item>
+        <item>Completed</item>
+        <item>Cancelled</item>
+
+    </string-array>
+
+</resources>

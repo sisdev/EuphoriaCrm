@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/container_white"
+    tools:context=".Activities.HomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+      >
+
+            <ProgressBar
+                android:id="@+id/progress_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="Welcome : "
+            android:textColor="#212a94"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/title"
+            android:layout_gravity="center"
+            android:layout_marginStart="113dp"
+            android:gravity="center"
+            android:text="user"
+            android:textColor="#1d5429"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="113dp"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/power"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="logout"
+            android:textColor="#ca2118"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/logout"
+            android:background="#cac6c6"
+            android:layout_alignParentLeft="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/user"
+                android:id="@+id/container"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_work_report"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button1"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/report_work" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="Work Reports"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_task"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button1"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+
+                        <ImageView
+                            android:id="@+id/imageview"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/my_task" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageview"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="My Task"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_leads"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button1"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/my_lead" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="My Leads"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_leads"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button1"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/add_lead" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="Add Lead"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_search_lead"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/button1"
+                        android:orientation="vertical"
+                        android:textColor="#fff"
+                    >
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/search_lead" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="Search Lead"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                   <!-- no require of this layout so visiblity is invisible-->
+                    <!--<LinearLayout
+
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="invisible"
+                        android:background="@drawable/button1"
+                        android:orientation="vertical"
+                        android:textColor="#fff">
+
+                        <ImageView
+
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/my_task" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageview"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:text="My Task"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+                    </LinearLayout>-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_task_available"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/round_text_view"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="33dp" />
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/container_white"
+    tools:context=".Activities.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="51dp"
+        android:gravity="center"
+        android:text="Welcome : "
+        android:textColor="#212a94"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="79dp"
+        android:layout_alignParentLeft="true" />
+
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/progress_circle"
+        android:gravity="center"
+        android:text="user"
+        android:textColor="#1d5429"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/progress_circle" />
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/power"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="logout"
+        android:textColor="#ca2118"
+
+        android:layout_alignParentRight="true" />
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="122dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/ll_work_report"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button1"
+            android:orientation="vertical"
+            android:textColor="#fff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/report_work" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Work Reports"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_my_task"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button1"
+            android:orientation="vertical"
+            android:textColor="#fff">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/my_task" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageview"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="My Task"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_task_available"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/round_text_view"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="42dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="121dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:id="@+id/ll_my_leads"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button1"
+            android:orientation="vertical"
+            android:textColor="#fff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/my_lead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="My Leads"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add_leads"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button1"
+            android:orientation="vertical"
+            android:textColor="#fff">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/add_lead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Add Lead"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+-->

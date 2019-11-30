@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:id="@+id/layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="30dp"
+      >
+        <ImageView
+            android:layout_width="70dp"
+
+            android:layout_height="70dp"
+            android:src="@drawable/icon_gps"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:text="GPS is not enable , to use this service enable GPS\nIf location mode available on gps setting , choose HIGH ACCURACY MODE"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enable"
+        android:textColor="#fff"
+        android:background="@drawable/button4"
+        android:id="@+id/btn_gps"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textColor="#fff"
+        android:background="@drawable/button5"
+        android:id="@+id/btn_exit"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
